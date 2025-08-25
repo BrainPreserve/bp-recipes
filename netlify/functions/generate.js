@@ -1,5 +1,5 @@
 // netlify/functions/generate.js
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+// Uses Node 18+ built-in fetch (no node-fetch needed)
 
 exports.handler = async function(event) {
   try {
